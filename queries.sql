@@ -9,6 +9,8 @@ SELECT orderdate from orders order by orderdate desc;
 -- Find all customers that live in London, Madrid, or Brazil
 SELECT customername, country from customers where city = "Madrid"  or city = "London" or country = "Brazil";
 -- Add a customer record for "The Shire", the contact name is "Bilbo Baggins" the address is -"1 Hobbit-Hole" in "Bag End", postal code "111" and the country is "Middle Earth"
+insert into customers (customerName, contactname, address, city, postalcode, country) 
+values("El Pirata de Culiacan", "Juan Luis Lagunas Rosales", "3040 Ajua ajua", "Culiacan", "696969", "Mejico");
 
 -- Update Bilbo Baggins record so that the postal code changes to "11122"
 
